@@ -1,0 +1,337 @@
+/*--------- GLOBAL--------*/
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+
+}
+
+:root {
+    --main-black: #1E202B;
+    --main-blue: #08AEEA;
+    --main-green: #2AF598;
+    --main-gradient: linear-gradient(to right, var(--main-blue), var(--main-green));
+}
+
+html {
+    font-family: Source Sans Pro, sans-serif;
+}
+
+body {
+    width: 100%;
+    background-color: white;
+}
+
+h1 {
+    font-size: 50px;
+    font-weight: 700;
+    color: var(--main-black);
+}
+
+h2 {
+    font-size: 36px;
+    font-weight: 700;
+    color: var(--main-black);
+}
+
+p,
+li {
+    font-size: 20px;
+    font-weight: 400;
+    color: var(--main-black);
+}
+
+.btnWhite {
+    display: inline-block;
+    text-decoration: none;
+    width: 200px;
+    height: 60px;
+    line-height: 60px;
+    font-size: 25px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 135px;
+    background-color: white;
+
+    border-radius: 5px;
+    /* background: -webkit-linear-gradient(top right, #2AF598, #08AEEA);
+     background: -o-linear-gradient(top right, #2AF598, #08AEEA);
+    background: -moz-linear-gradient(top right, #2AF598, #08AEEA);
+    
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+*/
+}
+
+.btngroup {
+    position: relative;
+    z-index: 1;
+}
+
+.whiteBG {
+    background-color: white;
+    display: block;
+    height: 60px;
+    width: 200px;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    border: 5px;
+
+
+}
+
+
+.btnGreen {
+    color: var(--main-green);
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.btnColor {
+    display: inline-block;
+    text-decoration: none;
+    width: 200px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    background-image: var(--main-gradient);
+    font-size: 25px;
+    font-weight: 700;
+
+}
+
+span {
+    color: var(--main-green);
+}
+
+
+/*--------- header/nav--------*/
+
+nav {
+    display: inline-block;
+    width: 100%;
+
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    line-height: 100px;
+
+}
+
+.logo {
+    font-weight: 700;
+    font-size: 25px;
+    letter-spacing: 2px;
+}
+
+
+
+nav ul {
+    float: right;
+    list-style: none;
+}
+
+nav ul li a {
+    display: inline-block;
+    margin-left: 50px;
+
+}
+
+header h1 {
+    color: white;
+    width: 60%;
+    margin: 40px 0 40px 0;
+
+}
+
+header p {
+    color: white;
+    margin-bottom: 40px;
+    opacity: 0.9;
+}
+
+header {
+    background-image: url(images/header.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    min-height: 900px;
+    width: 90%;
+    padding: 0 5%;
+    position: relative;
+}
+
+.ipad {
+    width: 60%;
+    position: absolute;
+    right: 0;
+    bottom: 60px;
+}
+
+.iphone {
+    width: 40%;
+    position: absolute;
+    right: 4%;
+    top: 150px;
+    display: none;
+
+}
+
+.mobile {
+    display: none;
+}
+
+.desktop {}
+
+label {
+    margin: 0 40px 0 0;
+    font-size: 25px;
+    color: white;
+    cursor: pointer;
+    position: absolute;
+    top: 32px;
+    right: 0;
+
+
+}
+
+#toggle {
+    display: none;
+
+}
+
+.mobile ul {
+    text-align: center;
+    width: 100%;
+    display: none;
+    margin: 0;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.mobile ul li {
+    margin: 0;
+    width: 100%;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+#toggle:checked - ul {
+    display: block;
+}
+
+
+/*--------- 4k movies --------*/
+
+.new4kMovies {
+    width: 90%;
+    padding: 0 5%;
+    margin-bottom: 100px;
+}
+
+.sectionTitle h2,
+.sectionTitle a {
+    display: inline-block;
+    vertical-align: middle;
+
+}
+
+.sectionTitle a {
+    margin-left: 20px;
+
+}
+
+.sectionTitle {
+    margin: 50px 0 20px 0;
+
+}
+
+.new4kMovies ul {
+    width: 100%;
+    display: flex;
+    list-style: none;
+
+}
+
+.new4kMovies ul li img {
+    width: 92%;
+    margin: 4%;
+    -webkit-box-shadow: 3px 3px 31px 0px rgba(0, 0, 0, 0.48);
+    -moz-box-shadow: 3px 3px 31px 0px rgba(0, 0, 0, 0.48);
+    box-shadow: 3px 3px 31px 0px rgba(0, 0, 0, 0.48);
+}
+
+/*--------- CALL TO ACTION --------*/
+
+.callToAction {
+    width: 80%;
+
+    text-align: center;
+    margin: 0 auto 200px auto;
+}
+
+.callToAction h1 {
+    margin-bottom: 30px;
+}
+
+/*--------- FOOTER --------*/
+
+
+footer a {
+    text-decoration: none;
+    color: var(--main-black);
+
+}
+
+footer ul {
+   
+    list-style: none;
+    float: right;
+}
+
+footer ul li a{
+    display: inline-block;
+    margin-left: 50px;
+}
+
+.copy a, .copy p{
+    
+   display: inline-block;
+    vertical-align: middle;
+}
+
+.copy p{
+    margin-left: 30px;
+}
+footer{
+    width: 90%;
+    padding: 0 5%;
+}
+footer ul , .copy{
+    line-height: 80px;
+    display: inline-block;
+}
+
+
+/*--------- Responsive --------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*  32:58    --------*/
